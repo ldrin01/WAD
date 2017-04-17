@@ -12,8 +12,8 @@
                <label>Your Guess: &nbsp</label><input ng-model="guess" type="number" />&nbsp&nbsp
                <button class="btn btn-primary btn-sm" ng-click="verifyGuess()">Verify</button> &nbsp
                <button class="btn btn-warning btn-sm" ng-click="initializeGame()">Restart</button>
-                  <div ng-show="deviation<0" class="alert alert-warning">Too High.</div>
-                  <div ng-show="deviation>0" class="alert alert-warning">Too Low.</div>
+                  <div ng-show="deviation<0" class="alert alert-warning">Lower</div>
+                  <div ng-show="deviation>0" class="alert alert-warning">Higher</div>
                   <div ng-show="deviation===0" class="alert alert-success">Yes! That's it.</div>
            <div class="text-info">No of Guesses: <span class="badge" ng-bind="noOfTires"></span></div>
       </div>
